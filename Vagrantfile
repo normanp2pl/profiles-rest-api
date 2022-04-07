@@ -30,6 +30,6 @@ Vagrant.configure("2") do |config|
      echo "alias python='python3'" >> /home/vagrant/.bash_aliases
    fi
    mkdir /vagrant
-   mount -t cifs -o gid=1000,uid=1000,username=Ania //172.30.128.1/profiles-rest-api /vagrant
+   mount -t cifs -o gid=1000,uid=1000,username=Ania,nobrl //172.30.128.1/profiles-rest-api /vagrant
  SHELL
 end
